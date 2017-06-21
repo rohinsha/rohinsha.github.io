@@ -1,0 +1,164 @@
+.feature-icon,.feature-icon-text{
+max-width:500px;margin:0 auto;
+}
+.feature-icon-text{
+margin-bottom:0px;
+text-align: center;
+}
+.feature-icon
+{
+width: 100px;
+height: 100px;
+
+
+}
+.hhe{
+  
+font-size: 30px;
+text-align:center;
+}
+h2 span { 
+   color: black; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   padding: 10px; 
+}
+h2{ 
+   position: absolute; 
+   top: 60px; 
+  margin-left: 350px;
+  text-shadow: 2px 2px 5px red; 
+  
+}
+
+.buttonn {
+  position:absolute;
+    background-color: #DC143C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    top:143px;
+    bottom:200px;
+    left:538px;
+    
+    cursor: pointer;
+    border-radius: 10px;
+height:50px;
+}-->
+.buttonn:hover{
+  background-color:#CC2D25;
+  color:black;
+}
+.bff{
+
+border:0.5px black;
+border-style: solid;
+border-radius:4px;
+background-color: #F04C2E;
+}
+.bff:hover{
+  background-color:yellow;
+  color: #D5D3AD;
+}
+.igm{
+left:13px;
+top:155px;
+position: absolute;
+transform:scale(1.5,1.5);
+transform-origin:0 0; 
+}
+input[type=text], select {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+/*input[type="text"]
+{
+    width:200px;
+    height:50px;
+}
+
+.buttonn
+{
+    position:absolute;
+    left:165px;
+    top:10px;    
+}*/
+h1
+{
+  color: white;
+ text-align: center;
+ margin-left: 40px;
+ display:inline-block;
+  padding:0px auto;
+  line-height: 50px; 
+ 
+  text-shadow: 2px 2px 5px red; 
+  
+
+  }
+  .helloj{
+	background-color:#EB534B;
+}
+.chinki{
+	background-color: #da3939;
+}
+p.k{
+	color: black;
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+font-size: 21px;
+}
+.fe{
+
+	margin-left: 40px;
+}
+.l{
+
+	background-color: #A9A9A9;
+}
+.box p{
+
+	font-family:courier;
+font-size: 20px;
+}
+p.ab{
+	font-size:30px;
+}
+ul.h-items,ul.social{
+	list-style-type:none;
+}
+
+.pagescroll a{
+font-family: sans-serif;
+font-size: 40px;
+
+}
+.fa-facebook,.fa-twitter,.fa-google-plus
+{
+color:#2B3856;
+}
+.fa-google-plus:hover{
+	color:white;
+}
+.fa-facebook:hover{
+
+	color:white;
+}
+.fa-twitter:hover{
+color:white;
+}
+.pagescroll{
+
+  font-family: sans-serif;
+  font-size:40px;
+}

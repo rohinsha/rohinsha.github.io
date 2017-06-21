@@ -1,0 +1,83 @@
+<html>
+	<head>
+<style>
+	button{
+		position: relative;
+	}
+	.btn1{
+		top:200px;
+		left:100px;
+	}
+	.btn2{
+		left:1200px;
+		top:-200px;
+
+	}
+.images{
+	margin-left: 250px;
+}
+</style>		
+	</head>
+	<button class="btn1">prev</button>
+	<body><div class="images">
+			<img src="images/1.jpg" class="img1" alt="" width="80%" height="60%">
+		<img src="images/2.jpg" class="img2" alt="" width="80%" height="60%">
+		<img src="images/3.jpg" alt="" class="img3" width="80%" height="60%">
+		<img src="images/4.jpg" alt="" class="img4" width="80%" height="60%">
+		<img src="images/5.jpg" alt="" class="img5" width="80%" height="60%">
+		<img src="images/6.jpg" alt="" class="img6" width="80%" height="60%">
+		<img src="images/7.jpg" alt="" class="img7" width="80%" height="60%">
+		
+		</div>
+		<button class="btn2">next</button>
+
+<script type="text/javascript" src="jquery1.12.4.js"></script>
+<script>
+
+var hey,a;var count=1,counter,second;
+$(document).ready(function(){ 
+	$('.img2').hide();
+	$('.img3').hide();
+	$('.img4').hide();
+	$('.img5').hide();
+	$('.img6').hide();
+	$('.img7').hide();
+	
+ hey=setInterval("changepic()",500);
+a=$('.img4').attr("src");
+
+a=a.split("/");
+counter=a[1].split('.');
+second=counter[0];
+$('.btn2').click(function(){
+	second=Number(second) + 1;
+	if(second>7)
+		second=1
+	$('.img1').attr("src","images/"+second+".jpg");
+
+
+console.log(second) 
+});
+$('.btn1').click(function(){
+	second=Number(second) - 1;
+	if(second<1)
+		second=7
+	$('.img1').attr("src","images/"+second+".jpg");
+
+
+console.log(second) 
+});
+});
+
+function changepic(){
+	if(count==5){
+		clearInterval(hey);
+	}
+	else{
+$('.img1').attr("src","images/"+count+".jpg");
+count++;		
+	}
+}
+</script>
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+		<style>
+		p{
+			margin-left: 540px;
+			font-family: 'Bungee Shade', cursive;
+			font-size: 70px;
+			color:white;
+		}
+		button:hover{
+			opacity: 0.8;
+			border:5px solid white;
+			color:black;
+			font-size: 20px;
+
+		}
+		
+	div{
+
+		width:400px;
+		height: 350px;
+		background-color: #D63030;
+		margin-left: 480px;
+		margin-top: -60px;
+border:5px solid black;
+		}
+		body{
+			background-color: #a9a9a9;
+		}	
+input{
+	border:2px solid #a9a9a9;
+	padding:0 40px;
+	margin-top:30px;
+	width:250px;
+	height:100px;
+	margin-left: 70px;
+	color:blue;
+	
+}
+input[type="text"]
+{
+	 font-family: monospace;
+	color:blue;
+    font-size:35px;
+
+}
+button{
+	border-radius:10px;
+	color:white;
+	margin-top: 10px;
+	padding:10px;
+	width:300px;
+	background-color:#215D9E;
+	margin-left:50px; 
+}
+.btn1{
+	margin-top: 40px
+}
+</style>
+	</head>
+<body>
+	<p>TIMER</p>
+	<div>
+	<input type="text" class="timer" placeholder="hh:mm:ss">
+	<button class="start btn1">START</button>
+	<button class="reset">RESET</button>
+	<button class="stop">STOP</button>
+
+</div>
+
+
+<script type="text/javascript" src="jquery1.12.4.js"></script>
+<script>
+var starter,userinput;
+$(document).ready(function(){
+$('.start').click(function(){  
+	userinput=$('.timer').val();
+	if(userinput=="")
+		alert("please fill the input field")
+	
+	userinput=userinput.split(":");
+	console.log(userinput)
+	starter=setInterval("hey()",1000);
+});
+$(".reset").click(function(){
+	$('.timer').val('00:00:00');
+});
+$(".stop").click(function(){
+	clearInterval(starter)
+});
+	
+
+
+});
+function hey(){
+	console.log("heyi ma" + userinput[0])
+userinput[2]--;
+$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2]);
+console.log(userinput[2]);
+	if(userinput[2]<=0)
+      {
+	    userinput[2]="00";
+        userinput[1]--;
+	$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2]);
+if(userinput[1]<=0)
+	  {
+		userinput[1]="00";
+		userinput[0]--;
+		$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2]);
+		if(userinput[0]<=0)
+		{
+			userinput[0]="00"
+		$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2]);
+	
+	  	clearInterval(starter)
+	  	}
+	  }
+    }		
+}
+
+
+
+</script>
+	</body>
+</html>

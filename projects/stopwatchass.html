@@ -1,0 +1,134 @@
+<html>
+	<head>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+		<style>
+		body{
+			background-color: black;
+		}
+		p{
+			margin-left: 440px;
+			font-family: 'Bungee Shade', cursive;
+			font-size: 70px;
+			color:white;
+		}
+	div{
+		width:400px;
+		height: 350px;
+		background-color: red;
+		margin-left: 480px;
+		margin-top: -60px;
+		
+		border:5px solid black;
+		}	
+		button:hover{
+			opacity: 0.8;
+			border:5px solid white;
+			color:black;
+			font-size: 20px;
+
+		}
+		
+input{
+	border:2px solid green;
+	padding:0 30px;
+	margin-top:30px;
+	width:350px;
+	height:100px;
+	margin-left: 30px;
+	color:blue;
+	
+}
+input[type="text"]
+{
+	 font-family: monospace;
+	color:blue;
+    font-size:35px;
+
+}
+button{
+	color:white;
+	margin-top: 10px;
+	padding:10px;
+	width:300px;
+	background-color: green;
+	margin-left:50px; 
+	border-radius:10px;
+}
+.btn1{
+	margin-top: 40px
+}
+</style>
+	</head>
+<body>
+	<p>STOPWATCH</p>
+
+	<div>
+			<input type="text" class="timer" placeholder="hr:min:sec:msec">
+	<button class="start btn1">START</button>
+	<button class="reset">RESET</button>
+	<button class="stop">STOP</button>
+
+</div>
+
+
+<script type="text/javascript" src="jquery1.12.4.js"></script>
+<script>
+var starter,userinput;
+$(document).ready(function(){
+$('.start').click(function(){  
+	$('.timer').val('00:00:00:00');
+	userinput='00:00:00:00';
+    userinput=userinput.split(":");
+	//console.log(userinput)
+	starter=setInterval("hey()",100);
+});
+$(".reset").click(function(){
+	$('.timer').val('00:00:00:00');
+	
+});
+$(".stop").click(function(){
+	clearInterval(starter)
+});
+	
+
+
+});
+function hey(){
+	//console.log("heyi ma "  + userinput[0])
+userinput[3]++;
+$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2] + ':' + userinput[3]);
+//console.log(userinput[3]);
+	if(userinput[3]>=10)
+      {
+		userinput[3]="00";
+        userinput[2]++;
+        if(userinput[2]<=9)
+        	userinput[2]="0"+userinput[2]
+	$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2]+ ':' + userinput[3]);
+if(userinput[2]>=59)
+	  {
+	  	userinput[2]="00";
+		userinput[1]++;
+			if(userinput[1]<=9)
+		userinput[1]="0"+ userinput[1];
+	
+		$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2]+ ':' + userinput[3]);
+		if(userinput[1]>=59)
+		{
+				userinput[1]="00"
+				userinput[0]++;
+				if(userinput[0]<=9)
+		userinput[0]="0"+ userinput[0];
+	
+		$('.timer').val(userinput[0] + ':'+ userinput[1] +':'+ userinput[2] + ':' + userinput[3]);
+	
+	  	}
+	  }
+    }		
+}
+
+
+
+</script>
+	</body>
+</html>
