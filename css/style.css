@@ -1,8 +1,9 @@
 body {
 		background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
-	}
+
+  }
 
 html,body {
   width: 100%;
@@ -37,15 +38,18 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 2.5rem;
+   color: #333 !important;
+   font-weight: 300;
 }
 
 p {
-       color:white;
-    letter-spacing: 0.7px;
-    line-height: 28px;
-    font-size: 17px;
-    text-align: justify;
-    font-weight: 500;
+       color:black;
+    letter-spacing: 0.5px;
+    line-height: 200%;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: left;
+    padding-right: 20px;
 }
 
 .parallax-section {
@@ -67,7 +71,7 @@ p {
 .section-title h2 {
 font-size: 30px;  
 position: relative;
-    top: -40px;
+    top: -50px;
     color:black;
     font-weight: 300;
     
@@ -109,7 +113,7 @@ a:hover {
   z-index: 99999;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  left-content: center;
   align-items: center;
   background: none repeat scroll 0 0 #ffffff;
 }
@@ -275,8 +279,13 @@ header{
 }
 
 .menu-container {
-    text-align: right;
-    margin-top: 250px;
+  width: 40%;
+       text-align: right;
+    /* margin-top: 100px; */
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+
 }
 
 .full-menu {
@@ -299,7 +308,7 @@ header{
     font-size: 30px;
     line-height: 1;
     font-weight: 400;
-    color: #666;
+    color:white;
     padding: 15px 0;
   transition: all 500ms ease; 
 }
@@ -309,11 +318,11 @@ header{
 }
 
 .menu-close {
-    color: #ffffff;
-    position: absolute;
-    font-size: 22px;
+color: #ffffff;
+    position: relative;
+    font-size: 20px;
     right: 40px;
-    top: 40px;
+    top: 15px;
     transition: none 1s ease 0s;
     z-index: 30;
 }
@@ -336,24 +345,6 @@ header{
  
 
 
-#home-1 {
-  background: url('../images/home-bg.jpg');
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center !important;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-        align-items: center;
-  height: 100vh;
-  background-repeat:no-repeat;
-background-size:100% 100%;
-}
-
 #home{
   max-width: 100% !important;
     height: 100% !important;
@@ -370,7 +361,7 @@ background-size:100% 100%;
     color: #ffffff;
     font-weight: 400;
     letter-spacing: 2px;
-    padding: 12px 22px;
+    padding: 12px 15px;
     transition: all 0.4s ease;
     width: 140px;
     top: 15px;
@@ -410,16 +401,16 @@ background-size:100% 100%;
   position: relative;
 }
 
-#about .about-thumb {
+ .about-thumb {
   position: absolute;
      line-height: 1.9em;
      letter-spacing: normal;
   padding: 80px 40px 60px;
      top: -180px;
     height: auto;
-
-        border: 0px solid rgba(255, 255, 255, 1);
-    background-color:#f9f9f9;
+   
+        border: 10px solid cadetblue;
+   
     border-radius: 0;
    
     color: #BEC7D5;
@@ -427,7 +418,13 @@ background-size:100% 100%;
 box-shadow: 1px 1px 20px 3px #ac8686;
     color: #BEC7D5;
    
-    background-color: #c39a9a;
+    /*background-color: u
+    #e6e2e2;*/
+background: url('http://www.reddraft.com/img/background-experience.jpg');
+
+
+ 
+
 }
 
 
@@ -469,19 +466,18 @@ box-shadow: 1px 1px 20px 3px #ac8686;
 
 
 #about{
-  background-color:  #e6e2e2;
-  height: 555px;
+  background-color:  #c39a9a;
+  height: 610px;
 
 }
 
 .frameworks li,
 .skill-set li{
-  display: inline;
-    padding: 0 12px;
+      display: inline;
+    padding: 0 2px;
     color: black;
-    font-size: 15px;
-    font-weight: 500;
-}
+    font-size: 14px;
+    font-weight: 500;}
 
 .main-text {
   color: #008B8B;
@@ -505,7 +501,7 @@ box-shadow: 1px 1px 20px 3px #ac8686;
 .skills-framework-block{
   
     margin-top: 40px;
-    margin-left: 23px;
+    margin-left: 10px;
    
 }
 
@@ -562,12 +558,11 @@ background-color: #005bbb;
 
 .social-icons li {
   margin: 10px 8px;
-    padding: 5px 9px;
+    padding: 9px 10px;
     display: inline;
-     background-color: black;
+     background-color: #333;
     border-radius: 50%;
-    opacity: 0.8;
-
+    
 }
 
 
@@ -593,6 +588,7 @@ margin-top: 6px;
 
 .resume-heading{
   margin-top: 30px;
+  text-decoration: underline;
 }
 
 .para-contact{
@@ -610,6 +606,7 @@ margin-top: 6px;
         position: relative;
     top: -18px;
     left: 30px;
+    color: #333 !important;
 
 }
 .portfolio-div{
@@ -667,11 +664,11 @@ margin-top: 6px;
 }
 /* footer section  */
 footer {
-     background: black;
+     background:#333;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    opacity: 0.7;
+  
         margin-top: 10px;
 }
 footer p {color: #ffffff;}
@@ -708,78 +705,29 @@ footer p {color: #ffffff;}
 }
 
 
-/* Mobile Responsive 
-@media (max-width: 980px) {
 
-  #home {
-   }
-
-  #about .about-thumb {
-    padding: 40px 40px 45px;
+@media screen and (max-width: 767px) {
+  .hamburger-menu span{
+        display: inline-block;
+    width: 21px;
+    height: 2px;
+    background: white;
+    margin: 2px;
   }
+.hamburger-menu{
+      left: -20PX;
+}
 
-  #download .col-md-6,
-  #download .col-md-4 {
-    padding-top: 40px;
-  }
+.full-menu > li > a {
+    
+    font-size: 22px;
 
 }
 
-
-
-
-@media (max-width: 650px) {
-
-  .full-menu > li > a {
-    font-size: 24px;
-  }
-
-  #home,
-  #download, #portfolio,
-  #contact {
-    text-align: center;
-  }
-
-  #download,
-  #portfolio, #contact {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  #about {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  #about .about-thumb {
-    position: relative;
-    padding: 40px 0px 40px 0px;
-    top: 0px;
-  }
-  #about .about-profile {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  #download .col-md-6,
-  #download .col-md-4 {
-    padding-top: 0px;
-  }
-
-  #contact .contact-form {
-    padding-bottom: 32px;
-  }
-
+.menu-container{
+  width: 100%;
 }
-
-.resume-heading a{
-color: black;
 }
-
-.resume-heading a:hover {
-  text-decoration: underline !important;
-
-}
-*/
 
 @media screen and (min-width :320px) and (max-width:519px) {
 .title{
@@ -799,31 +747,31 @@ color: black;
     border-radius: 7px;
     color: #ffffff;
     font-weight: 400;
-    letter-spacing: 1px;
+        letter-spacing: 1px;
     padding: 5px 2px;
     transition: all 0.4s ease;
-    width: 84px;
+    width: 90px;
     top: -15px;
-    left: 123px;
+    left: 119px;
     position: relative;
     font-size: 12px;
 }
 
 .section-title p {
 
-    margin-top: 0;
+      margin-top: 0;
     letter-spacing: 0.2px;
     line-height: 22px;
-    font-size: 12px;
-    padding: 20px;
+    font-size: 13px;
+    padding: 10px;
 }
 
 .section-title h2 {
 
      position: relative;
-    font-size: 20px;
-    top: 20px;
-    left: 20px;}
+    font-size: 18px;
+    top: 11px;
+    left: 10px;}
 
  #about .about-thumb{
       padding: 20px 10px 30px;
@@ -868,7 +816,7 @@ color: black;
 .social{
       font-size: 18px;
     color: #1E3021;
-    margin-top: 6px;
+    margin-top:-15px;
     opacity: 0.7;
     text-align: center;
 }
@@ -876,9 +824,10 @@ color: black;
 .social-icons li{
   margin: 5px 2px;
     padding: 5px 1px;
+
 }
 footer p{
-  font-size: 12px;
+  font-size: 10px;
 }
 .resume-heading{
   margin-top: 0px;
@@ -894,22 +843,21 @@ height: auto;
 .para-head{
   font-size: 15px;
   margin-top: 0;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 .dashboard{
-   margin-left: 4px;
-    margin-top: -50px;
-    font-size: 20px;
+    margin-left: 4px;
+    margin-top: -30px;
+    font-size: 17px;
     margin-bottom: 1px;
 }
 
 .proj{
   left: 50px !important;
     position: relative !important;
-    top:-70px !important;
-    font-size: 25px !important;
-}
+    top: -60px !important;
+    font-size: 20px !important;}
 
 #about{
   height: auto;
@@ -928,6 +876,10 @@ padding: 0;
 
 #portfolio{
   padding-bottom: 40px;
+}
+
+.skill-set li{
+  font-size:12px;
 }
 }
 
@@ -965,7 +917,7 @@ footer p{
     color: black;
     line-height: 25px;
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
     font-weight: 500;
     margin-top: 0;
     letter-spacing: 0.5px;
@@ -974,7 +926,7 @@ padding: 30px;
 
 .social-icons li {
   margin: 10px 4px;
-    padding: 3px 5px;
+    padding: 6px 5px;
     display: inline;
     background-color: black;
     border-radius: 50%;
@@ -996,7 +948,7 @@ padding: 30px;
  }
 
  #about ul.about-profile{
-      margin-top: 30px;
+      margin-top: 0;
     padding-left: 50px;
 }
 
@@ -1045,7 +997,41 @@ height: auto;
 padding: 0;
 }
 
+.skills-framework-block{
+  margin-left: 50px;
+}
+}
 
+@media screen and (min-width:1023px){
+  .skills{
+        position: relative;
+    left: 8%;
+  }
+}
+
+@media screen and (min-width:993px){
+  #about ul.about-profile{
+    padding-left: 50px;
+  }
+
+  .skill-set li{
+    font-size: 15px;
+  }
+}
+
+
+@media and screen (min-width:768px) and (max-width:992px){
+  #about ul.about-profile{
+    padding-left: 40px;
+  }
+
+.section-title p{
+    letter-spacing: 0 !important; 
+    line-height: 190% !important;
+    font-weight: 400 !important;
+    font-size: 1em  !important;
+    text-align: left !important;
+}
 }
 
 @media screen and (min-width :520px) and (max-width:1023px) {
@@ -1067,7 +1053,7 @@ padding: 0;
     color: #ffffff;
     font-weight: 400;
     letter-spacing: 1px;
-    padding: 8px 8px;
+    padding: 8px 4px;
     transition: all 0.4s ease;
     width: 105px;
     top: -15px;
@@ -1081,7 +1067,7 @@ padding: 0;
 
 @media screen and (min-width :768px) and (max-width:992px) {
 #about{
-      height: 780px;
+      height: 860px;
 }  
 
 .proj{
@@ -1133,7 +1119,12 @@ padding: 0;
 }
 
 .skills-framework-block {
-margin-top: 62px;
+margin-top: 68px;
+}
+
+
+#about .container{
+  padding-left: 0 !important;
 }
 }
 
@@ -1148,7 +1139,7 @@ margin-top: 62px;
 
 
 #about{
-      height: 630px;
+      height: 685px;
 }
 
 .section-title h2{
@@ -1182,6 +1173,34 @@ left:55px !important;
 }
 
 
-@media screen and (min-width :1201px) {
-
+@keyframes animatedBackground {
+  from { background-position: 0 0;
+   }
+  to {background-position: 100% 0;}
 }
+
+@-webkit-keyframes animatedBackground {
+  from { background-position: 0 0;
+   }
+  to {background-position: 100% 0;}
+}
+
+
+#home-1 {
+  background: url('../images/home-bg.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+        align-items: center;
+  height: 100vh;
+  background-repeat:no-repeat;
+background-size:100% 100%;
+}
+
