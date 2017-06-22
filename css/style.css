@@ -322,7 +322,7 @@ color: #ffffff;
     position: relative;
     font-size: 20px;
     right: 40px;
-    top: 15px;
+    top: -5px;
     transition: none 1s ease 0s;
     z-index: 30;
 }
