@@ -4,7 +4,7 @@
     var $doc = $(document), win = $(window), AnimationsArray = [];
     window.SITE = {
         init: function() {
-             var menu2 = $("#full-menu.style2"), 
+             var menu2 = $("#full-menu.menu"), 
                      items2 = menu2.find(".full-menu>li"), 
                      toggle = $(".hamburger-menu"), 
                      tlMainNav = (toggle.find("span"), 
