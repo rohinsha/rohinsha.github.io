@@ -1,0 +1,480 @@
+.heading-1{
+			font-size:40px;
+			padding-top:10px;
+			margin-top:10px;
+			color:$darkGray;
+			}
+.heading-2{
+			margin-top:55px;
+			padding-bottom:20px;
+			color:$darkGray;
+			font-size:38px !important;
+  			}
+  			.wrap{
+  			text-align:center;
+  			}
+.second-animation{ 
+				display:inline-block;
+		  		height:300px;
+  	
+  		ul { 
+  			li {
+				text-align:center !important;
+				font-size:3rem;
+				position: relative;
+				list-style:none;
+				float:left;
+				margin-top:50px !important;
+				margin-right: 71px;
+				.circle-text{
+					position:relative;
+					left:0px;
+					padding-top:5px;
+					font-size: 2.5rem;
+				
+				}
+
+				&:nth-child(1){
+					.icon-circle{
+						color: #e5ab13;
+					    }
+    				}
+    			
+    				&:nth-child(1):hover{
+							    .icon-circle{
+									font-size:60px;
+								    }
+						  		}
+					&:nth-child(2){
+		  						.icon-circle{
+		 							color: #9AE7E0;
+									}
+								}
+					&:nth-child(2):hover{
+		  						.icon-circle{
+									font-size:60px;
+		    						}
+		  						}
+					&:nth-child(3) {
+									color: #41BBD9;
+								    }
+					&:nth-child(3):hover{
+								.icon-circle{
+									font-size:60px;
+									}
+		 					   }
+					&:nth-child(4) {
+									color:#3993EB;
+		    					}
+		 			&:nth-child(4):hover{
+								.icon-circle{
+									font-size:60px;
+		    						}
+		  						 }
+					&:nth-child(5) {
+						margin-right:0px !important;
+						text-align:center;
+						.circle{
+			  					height:35px;
+			  					width:35px;
+			  					border-radius:100%;
+								position: relative;
+								top:0px; 
+								left:34px;
+								}
+		
+						.btn-circle-5{
+								background-color: white;
+								border:2px dashed black;
+								&:hover{
+										height:70px;
+										width:70px;
+										top:-20px;
+										border-radius: 100%;
+										border:2px solid black;
+									}
+								}
+								.inside{
+										height:30px;
+									    width:30px;
+										border-radius: 100%;
+										top:0px; 
+										left:0px;
+										background-color:white;
+										position:absolute;
+										transition:transform(180deg);
+										&:hover{
+										height:40px;
+									    width:40px;
+										border-radius: 100%;
+										background-color: black;
+										position:absolute;
+										top:14px; 
+									    left:13px;
+										}
+									}
+								}
+					&:after{
+							content:'';
+						  	position: absolute;
+						  	height:3px;
+						  	left:59px;
+						  	top:15px;
+						      width: 165.5px;
+						}
+					&:nth-child(1)::after{
+						  content:'';
+						  background-color:#e5ab13; 
+				        }
+				        &:nth-child(5)::after{
+				        width:0px !important;
+				        }
+					&:nth-child(2)::after{
+						  content:'';
+						  background-color:#9AE7E0; 
+				        }
+					&:nth-child(3)::after{
+						  content:'';
+						  background-color: #41BBD9
+				        }
+					&:nth-child(4)::after{
+						content:'';
+						border:2px dashed black;
+					}
+
+					&:nth-child(1):hover{
+					  	color: #e5ab13;
+					  }
+					&:nth-child(2):hover{
+						color:#9AE7E0;
+					}
+					&:nth-child(3):hover{
+		  				color:#41BBD9;
+					}
+					&:nth-child(4):hover{
+		  				color:#3B94E3;
+					}
+					&:nth-child(5):hover{
+		  			color:black;
+					}
+		
+				}
+		    }
+		}
+
+.switch {
+		  position: relative ;
+		  display:block ;
+		  max-width: 130px ;
+		  height: 50px;
+		  top:20px ; 
+		  margin:0px auto;
+		 }
+.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color:$darkGreen;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+			&:before {
+						position: absolute;
+						content: "";
+						height: 26px;
+						width: 43px;
+						left: 4px;
+						top:12px;
+						bottom: 4px;
+						background-color:$darkGray;
+						-webkit-transition: .4s;
+						transition: .4s;
+	 				}
+	 	}
+input:checked + .slider {
+  background-color: $white;
+  border:1px solid $darkGreen;
+  .celsius-sign{
+  visibility:hidden;
+  }
+  .fahrenheit-sign{
+  visibility:visible;
+  }
+
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(65px);
+  -ms-transform: translateX(65px);
+  transform: translateX(65px);
+
+}
+.celsius-sign{
+	  position:absolute;
+	  right:5px;
+	  font-size: 25px;
+	  top:7px;
+	  z-index:12;
+	}
+	.fahrenheit-sign{
+	  position:absolute;
+	  left:5px;
+	  font-size: 25px;
+	  top:7px;
+	  z-index:11;
+	  visibility:hidden;
+	}
+
+@media only screen and (min-width:768px) and (max-width: 1023px){
+.second-animation{
+	ul{
+		li{
+			margin-right:12px;
+	 		&:after{
+	 		width:88.5px;
+	 		}
+		}
+      }
+   }
+}
+@media only screen and (min-width:480px) and (max-width: 767px){
+.second-animation{
+	ul {
+		li {
+		padding-top:10px;
+		font-size:2rem;
+		margin-right:0px;
+		&:after {
+			 top:20px;
+			 left:36px;
+			 width:46px;
+			 }
+.circle-text {
+	font-size: 1.5rem;
+	}
+		&:nth-child(1):hover {
+				.icon-circle{
+					font-size:40px;
+					}
+				}
+		&:nth-child(2):hover{
+				.icon-circle{
+					font-size:40px;
+					}
+				}
+		&:nth-child(3):hover{
+				.icon-circle{
+					font-size:40px;
+					}
+				}
+		&:nth-child(4):hover{
+				.icon-circle{
+					font-size:40px;
+					}
+				}
+		&:nth-child(5){
+			.circle-text{
+					padding-top:12px !important;
+					}
+			.inside{
+					height:17px;
+					width:17px;
+	  				&:hover{
+						height: 15px;
+					    width: 15px;
+					  	top: 3px;
+					    left: 3px;
+						}
+					}
+			.btn-circle-5{
+				&:hover{
+					height: 25px;
+				    width: 25px;
+				    top: 0px;
+					}
+				}
+			.circle{
+				top:5px;
+				left:28px;
+				height:20px;
+				width:20px;
+			}
+		}
+	  }
+	}
+  }
+}
+@media only screen and (min-width:321px) and (max-width: 479px) {
+
+.heading-1{
+			font-size:26px;
+			padding-top:4px;
+			margin-top:4px;
+			}
+.heading-2{
+			margin-top:30px;
+			padding-bottom:10px;
+			font-size:23px;
+  			}
+.switch {
+		  top:9px ; 
+		  margin:0px auto;
+		 }
+.second-animation{
+	ul{
+		margin-top:-52px;
+	li{
+	padding-top:12px;
+	font-size:1.5rem;
+	margin-right:-1px !important;
+
+	 &:after{
+	 top:20px;
+	 left:27px;
+	 width:26px;
+	 }
+	 .circle-text{
+					font-size: 1rem;
+				
+				}
+				&:nth-child(1):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(2):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(3):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(4):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(5){
+					.circle-text{
+					padding-top:6px !important;
+					}
+					.inside{
+						height:15px;
+						width:15px;
+						&:hover{
+							height: 15px;
+						    width: 15px;
+	  						top: 3px;
+	    					left: 3px;
+	  					}
+					}
+	.btn-circle-5{
+		&:hover{
+			height: 25px;
+		    width: 25px;
+		    top: 0px;
+		}
+	}
+	.circle{
+		top:0px;
+		left:17px;
+		height:20px;
+		width:20px;
+		}
+	}
+   }
+  }
+ }
+
+}
+@media only screen and (max-width: 320px){
+.heading-1{
+			font-size:26px;
+			padding-top:4px;
+			margin-top:4px;
+			}
+.heading-2{
+			margin-top:30px;
+			padding-bottom:10px;
+			font-size:23px;
+  			}
+.switch {
+		  top:9px ; 
+		  margin:0px auto;
+		 }
+.second-animation{
+	ul{
+		margin-top:-52px;
+	li{
+	padding-top:12px;
+	font-size:1.5rem;
+	margin-right:-1px !important;
+
+	 &:after{
+	 top:20px;
+	 left:27px;
+	 width:26px;
+	 }
+	 .circle-text{
+					font-size: 1rem;
+				
+				}
+				&:nth-child(1):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(2):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(3):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(4):hover{
+				.icon-circle{
+				font-size:20px;
+				}
+				}
+				&:nth-child(5){
+					.circle-text{
+					padding-top:6px !important;
+					}
+					.inside{
+						height:15px;
+						width:15px;
+						&:hover{
+							height: 15px;
+						    width: 15px;
+	  						top: 3px;
+	    					left: 3px;
+	  					}
+					}
+	.btn-circle-5{
+		&:hover{
+			height: 25px;
+		    width: 25px;
+		    top: 0px;
+		}
+	}
+	.circle{
+		top:0px;
+		left:17px;
+		height:20px;
+		width:20px;
+		}
+	}
+   }
+  }
+ }
+}
