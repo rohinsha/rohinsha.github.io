@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
 
 // wait until DOM is ready
-document.addEventListener("DOMContentLoaded", function(event) {
+/*document.addEventListener("DOMContentLoaded", function(event) {
 
   function ground() {
 
@@ -66,4 +66,4 @@ window.onload = function() {
 
 };
   
-});
+});*/
