@@ -1,0 +1,26 @@
+{
+  "name": "ui-dashboard-task",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohinsha/UI-dashboard-task3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rohinsha/UI-dashboard-task3/issues"
+  },
+  "homepage": "https://github.com/rohinsha/UI-dashboard-task3#readme",
+  "description": ""
+}
