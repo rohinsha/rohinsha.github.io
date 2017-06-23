@@ -1,0 +1,75 @@
+@font-face {
+	font-family: Hallo;
+	src: url(../fonts/HalloSans.otf);
+}
+
+
+h1 {
+	text-align: center;
+	letter-spacing: 2%;
+	padding-top: 3%;
+	text-transform: uppercase;
+	color: white;
+	font-family: "Hallo";
+}
+
+
+span {
+	display: inline-block;
+	border-bottom: 2px solid white;
+	padding-bottom: 2px;
+}
+
+
+body {
+	background: #252839;
+
+}
+
+#randomQuote {
+	text-align: center;
+}
+
+
+#buttonContainer {
+	text-align: center;
+	padding-top: 12%;
+}
+
+
+#buttonContainer a {
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	font-family: "Hallo";
+	font-size: 1.5em;
+	text-decoration: none;
+	outline: none;
+	
+}
+
+#quoteContainer {
+	color: white;
+	text-align: center;
+	padding-top: 5%;
+	font-family: "Hallo";
+	font-size: 1.2em;
+	letter-spacing: 1px;
+
+}
+
+
+#footer{
+	text-align: center;
+	padding-top: 50%;
+	color: white;
+	font-family: "Hallo";
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	} 
+
+#footer a:hover {
+	font-size: 20px;
+}

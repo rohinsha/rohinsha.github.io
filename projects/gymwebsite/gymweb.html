@@ -1,0 +1,674 @@
+<html>
+<head>
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="https://fonts.googleapis.com/css?family=Arvo|Concert+One|Viga|Stardos+Stencil|Aldrich|Acme|Share+Tech|Rubik+Mono+One" rel="stylesheet">
+<title>Gym</title>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+*{
+	box-sizing:border-box;
+}
+.secondpart{
+	top:10px;
+background-color: green;
+	position: fixed;
+}
+body{
+	
+	background-color:171F29;
+min-height: 2000px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    //border:2px solid white;
+position: relative;
+left:90px;
+top:20px;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.footp{
+	position: relative;
+	top:0px;
+font-size: 20px;
+font-family: 'Share Tech', sans-serif;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+    width: 500px;
+}
+.social-icons li {
+   position: relative;
+   left:-130px;
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: D32324;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    transition: .5s;
+    background-color:  D32324;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: D32324;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: D32324;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    transition: .5s;
+    background-color:  D32324;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color:  D32324;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+.leftmenu{ 
+	float: right;
+//margin-right: -10px !important;
+  margin-top:30px !important;
+  background-image: url("imgfolder/16.jpg");
+background-size: 820px 500px;
+background-repeat: no-repeat;
+height:500px;
+//position: absolute;
+}
+.one,.two,.three,.four{
+	transition:all 0.3s;
+}
+.twodiv{
+//	position: relative;
+//	z-index: 999;
+}
+
+.homequote{
+border:5px solid yellow;
+width:450px;
+height:500px;
+float: left;
+margin-top: 30px;
+margin-left: 20px;
+font-family: 'Arvo', serif;
+color: white;
+font-size: 55px;
+padding:20px;
+}
+.one:hover,.two:hover,.three:hover,.four:hover{
+transform:scale(1.1);
+}
+img{
+	max-width:100%;
+	height:auto; 
+	}
+	.centerimg,.left,.right{
+		border:1px solid black;
+
+	}
+.centerimg{
+width:900px !important;
+height:500px !important;
+margin-left:-10px;
+}
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+
+.main-header{
+	width:100%;
+   background-color: 0D0F11;
+   height: 65px;
+   position: fixed;
+z-index: 2;
+top:0px;
+left:0px;
+//z-index: 999;
+}
+.logo{
+margin-top: 10px;
+margin-left: 20px;
+float: left;
+}
+li {
+    float: left;
+}
+.maintable{
+	width: 100%;
+	margin-left: 10px;
+margin-top: 100px;
+}
+li a {
+    display: block;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+font-family: 'Share Tech', sans-serif;
+}
+li a:hover{
+	background-color: #81927B;
+	transition:all ease-out 0.6s;
+}
+.one{
+	//margin-left: 20px;
+
+}
+.two{
+	//margin-left:14px;
+}
+.three{
+	margin-right: 12px;
+}
+
+.four{
+	margin-right:12px;
+}
+.img{
+	width:310px;
+	height: 230px;
+}
+
+.right{
+	//margin-right:20px; 
+}
+.para1{
+	color: white;
+	position: absolute;
+	//z-index: 2;
+	top:1600px;
+	width:1200px;
+font-family: 'Acme', sans-serif;
+font-size: 70px;
+}
+
+.promo{
+	background-color: #a9a9a9;
+	margin-top: 600px;
+color:white;
+height: 430px;
+}
+.promo>h1,.promo>h2,.promo>h3,.promo>h4,.promo>p{
+font-family: 'Rubik Mono One', sans-serif;	
+text-align: center;
+padding:10px;
+color:brown;
+}
+.promo>h1{
+position: relative;
+top:15px;
+z-index: 1;
+}
+.promo>p{
+color:white;
+font-size:25px;
+position: relative;
+top:-20px;
+font-family: 'Concert One', cursive;
+}
+
+.offertag{
+	background-color: red;
+	height: 80px;
+	margin-top: -30px;
+}
+.bgstatic{
+//margin-left:65px;
+//max-width: 100%;
+//height: auto;
+//position: relative;
+//margin-top: 300px;
+
+}
+.parallax{
+	/z-index: 1;
+}
+.offertag>p{
+	font-size: 38px;
+	padding:10px 5px;
+position: relative;
+top:10px;
+}
+.feedback>h1{
+	position: relative;
+	top:-5px;
+	font-size: 50px;
+}
+.feedback>h3{
+	position: relative;
+	top:-90px;
+	margin-left: -200px;
+	font-size: 25px;
+}
+.feedback{
+//	border:2px solid black;
+	margin-top:-5px;
+}
+.testim{
+//	border:2px solid black;
+margin-top:14px;
+}
+.feedback>h4{
+	position: relative;
+	font-size: 30px;
+top:-30px;
+}
+.feedbut{
+	width:80%;
+	height: 50px;
+	position: relative;
+	top:-96px;
+	margin-left: 60px;
+background-color: #BF1B2A;
+color:black;
+font-size: 26px;
+border:2px solid black;
+}
+.feedbut:hover{
+	opacity: 0.8;
+}
+.radio1{
+	position: relative;
+	top:-180px;
+	margin-left: 350px;
+	//vertical-align: middle;
+}
+.radio2{
+position: relative;
+	top:-180px;
+	margin-left: 10px;
+	//vertical-align: middle;
+
+}
+.inp1,.inp2,.inp3{
+
+	width:80%;
+	height: 44px;
+	padding: 10px;
+	margin-top:30px;
+	position: relative;
+	top:-90px;
+	margin-left: 55px;
+}
+.staytouch{
+	position:relative;
+	z-index:1;
+   height:600px;
+   color:#371C19;
+   background-color:#F52E1A;
+   opacity: 0.5;
+   text-align: center;
+font-family: 'Aldrich', sans-serif;
+  //border-style: solid;
+    border-bottom:10px solid black; 
+}
+.staytouch>h1{
+
+	top:150px;
+	font-size: 70px;
+	position: relative;
+}
+.staytouch>h3{
+position: relative;
+top:140px;
+font-size: 40px;
+}
+.getstart{
+position: relative;
+top:190px;
+height:50px;
+width:70%;
+font-size:35px;
+background-color:#050303;
+color: white;
+  font-family: 'Aldrich', sans-serif;
+
+}
+.fixed{
+	background-image: url("imgfolder/17.jpg");
+	background-repeat: no-repeat;
+	//background-size: 700px 400px;
+	min-height:600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    //background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.arrow{
+	position:relative;
+	top:-60px;
+	//display: inline;
+	height:20px;
+	left:600px;
+	padding: 0;
+	margin-bottom: 0px;
+	
+}
+
+.tworows{
+	background-color:#ECD1D5;
+height: 670px;}
+input[type="text"]{
+
+  background-color : C5C5DD; 
+  color:black;
+
+}
+::-webkit-input-placeholder {
+   color: red;
+   font-size: 18px;
+
+}
+.feedback>p{
+	font-size: 20px;
+position: relative;
+top:-60px;
+}
+.testim>h1{
+	position: relative;
+	top:10px;
+	font-size: 50px;
+}
+.testim>h2{
+	font-size: 30px;
+	position: relative;
+	top:-50px;
+}
+.seeall{
+width:80%;
+	height: 50px;
+	position: relative;
+	top:-110px;
+	margin-left: 70px;
+background-color: #BF1B2A;
+color:black;
+font-size: 26px;
+border:2px solid black;
+}
+.seeall:hover{
+	opacity: 0.8;
+}
+
+.feedback>h1,h3,h4,p,input,.testim>h1,h4,h3,h2,p{
+	font-family: 'Share Tech', sans-serif;
+	color:black;
+	text-align: center;
+
+}
+.label1{
+position: relative;
+top:-180px;
+color:red;
+font-size: 20px;
+}
+.label2{
+	position: relative;
+top:-180px;
+color:red;
+font-size: 20px;
+}
+.testimg{
+	max-width:200px;
+	height: 200px;
+	border-radius: 200px;
+	position:relative;
+	top:-60px; 
+margin-left: 230px;
+}
+.testim{
+
+}
+.testim>p{
+	font-size: 30px;
+position: relative;
+top:-80px;
+}
+.testim>h4{
+	position: relative;
+	font-size: 30px;
+	top:-100px;
+}
+li a:hover {
+    background-color:#a9a9a9;
+}
+@media screen and (max-width: 582px) {
+   body{
+        background-color:yellow;
+    }
+}
+
+</style>
+<body>
+	<div class="wrap" id="wrap">
+<div class="main-header" id="header">
+	<img src="imgfolder/workouts.png" class="logo"alt="">
+<nav>
+  <li><a href="workouts.html">Workouts</a></li>
+  <li><a href="photo.html">Image Gallery</a></li>
+  <li><a href="nutrition.html">Diets & Nutrition</a></li>
+-  <li><a href="faci.html">Facilities</a></li>		
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="FORM.html">Register Now</a></li>
+</nav>
+</div>
+<div id="content">
+	<div class="maintable">
+<table >
+	<tr>
+		<td  class="tds"><img src="imgfolder/11.jpg" alt=""class="img left one"></td>
+<td rowspan="2" width="50%" class="tdmain" >
+<img src="imgfolder/1.jpg" class="centerimg " alt="">
+
+<img src="imgfolder/2.jpg" width="700px" height="650px" class="img2" alt="">
+<img src="imgfolder/3.jpg" width="700px" height="650px" class="img3" alt="">
+<img src="imgfolder/4.jpg" width="700px" height="650px" class="img4"alt="">
+<img src="imgfolder/5.jpg"class="img5" width="700px" height="650px" alt="">
+</td>
+		<td  class="tds" ><img src="imgfolder/14.jpg" alt="" class="img right two"></td>
+	</tr>
+	<tr>
+		<td  class="tds"><img src="imgfolder/12.jpg" alt="" class="img left three"></td>
+		<td class="tds"><img src="imgfolder/15.jpg" alt="" class="img right four"></td>
+	</tr>
+	
+</table>
+</div>
+</div>
+<div class="twodiv">
+	<div class="homequote">
+		You don't have to be great to start.But you DO have to start to be great.
+
+
+	</div>
+<div class="leftmenu"><a href=""></a></div>
+</div>
+<div class="promo">
+<h1>PRE OFFER SALES HAVE BEGUN</h1>
+<h3>BOOK NOW FOR SPECIAL RATES</h4>
+<h2 class="city">ANDHRA PRADESH-GUNTUR-VIDYANAGAR</h2>
+<h2 class="city">MAHARASHTRA-MUMBAI-VASAI WEST</h2>
+<h2 class="city">MAHARASHTRA-MUMBAI-MULUND WEST</h2>
+<p class="comingsoon"><span class="colorchange">GYMS COMING SOON:BHUBANESHWAR-PATIA|CHANDIGARH-KHAKAR|SOLAPUR-RAMCHANRA COMPLEX|HYDERABAD BANJARA HILLS|SRINAGAR(J&K)-RAMBAGH|GURGAON-SECTOR-56|BANGALORE-JAYA NAGAR</span> </p>
+</div >
+<div class="offertag">
+	<p>ENROLL ONLINE FOR GGFI AND GET RS.500 OFF!</p>
+</div>
+<div class="tworows">
+<table>
+	<tr>
+<td width="50%">
+	<div class="feedback">
+		<h1 class="feed">
+				LEAVE US YOUR FEEDBACK
+		</h1>
+		<h4>AND YOU COULD WIN RS.1000 OFF ON YOUR ANNUAL MEMBERSHIP</h4>
+		<p>All your information will be kept confidential.</p>
+		<input type="text" class="inp1"placeholder="YOUR NAME">
+     <input type="text" class="inp2" placeholder="YOUR EMAIL">
+<input type="text" class="inp3" placeholder="YOUR CONTACT NUMBER">
+
+<h3>ARE YOU A MEMBER <br/>OF GOLD'S GYM</h3><br/>
+<input type="radio" name="member" class="radio1" value="yes" placeholder="yes" ><label for="" class="label1">Yes</label>
+<input type="radio" name="member" class="radio2"value="no"><label for=""  class="label2">No</label>
+<button class="feedbut">SUBMIT</button>
+</div></td>
+<td width="50%"><div class="testim">
+	<h1>TESTIMONIALS</h1>
+	<<h2>Our members love us.</h2>
+	<img src="imgfolder/19.jpg" alt="" class="testimg">
+	<p>I love gyming in Gold Gym because of the quality,standards and practices that they have maintained.The ambience is one of it's kind.</p>
+	<h4>Shashank Dholakia,Gold Gym Lower Parel,Mumbai</h4>
+	<button class="seeall">SEE ALL</button>
+
+
+
+</div></td>
+		
+	</tr>
+</table>
+</div>
+
+<div class="fixed">
+	<div class="staytouch">
+		
+
+		<h1>ARE YOU READY TO GET TOUGH</h1>
+		<h3>JOIN US TODAY AND BE A PART OF FITNESS REVOLUTION</h3>
+		<button class="getstart">GET STARTED</button>
+	</div>
+</div>
+<div class="footer-social-icons">
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    </ul>
+    <h2>GoldsGym.in | All rights preserved |A Valecha-Advani Group Enterprise</h2>
+    <i class="fa fa-angle-double-up arrow" style="font-size:68px;color:red"></i>
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="jquery1.12.4.js"></script>
+<script>
+var count=1,hey;
+$(document).ready(function() {
+	$('.img2').hide();
+	$('.img3').hide();
+	$('.img4').hide();
+	$('.img5').hide();
+
+	 hey=setInterval("changepic()",500);
+    var contentPlacement = $('#header').position().top + $('#header').height();
+    contentPlacement=contentPlacement+20;
+    $('#content').css('margin-top',contentPlacement);
+
+
+$(function() { 
+ 	var contentToggle = 0; 
+if (contentToggle == 0) {
+$("#rightmenu").addClass('leftmenu') ;
+			$('.leftmenu').delay(2000).animate({width:'70%',marginRight:"-100px"},500,'linear');  
+ 
+			contentToggle = 1; 
+		}
+		else if (contentToggle == 1) {
+			$('.leftmenu').animate({
+				marginRight: '0px' 		
+			}) 
+			contentToggle = 0; 
+		}
+	  
+});	  
+ });	
+function changepic(){
+	
+	if(count==6)
+	count=1;
+$('.centerimg').attr("src","imgfolder/"+count+".jpg");
+count++;		
+	}
+	$(window).scroll(function () {
+		console.log($(this).scrollTop())
+        if ($(this).scrollTop() > 2600) {
+            $('.arrow').fadeIn();
+        } else {
+            $('.arrow').fadeOut();
+        }
+         $('.arrow').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+	
+
+</script>
+</body>
+</html>
