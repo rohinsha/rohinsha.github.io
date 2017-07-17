@@ -10124,9 +10124,13 @@ p {
   background-size: cover !important;
 }
 
-.portfolio,
-.contact {
+.portfolio {
   padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.contact {
+  padding-bottom: 40px;
   padding-top: 80px;
 }
 
@@ -10746,7 +10750,7 @@ header {
 }
 
 .contact {
-  height: 330px;
+  min-height: 380px;
 }
 
 .resume-heading {
@@ -10866,7 +10870,7 @@ footer p {
   }
 
   .contact {
-    height: 235px;
+    min-height: 235px;
   }
 
   .contact-text {
@@ -11007,7 +11011,7 @@ footer p {
   }
 
   .contact {
-    height: 321px;
+    min-height: 321px;
   }
 
   .about {
@@ -11125,7 +11129,7 @@ footer p {
   }
 
   .contact {
-    height: 290px;
+    min-height: 290px;
   }
 
   .skill-heading {
