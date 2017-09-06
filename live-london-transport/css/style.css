@@ -1,0 +1,110 @@
+#map {
+  height: 400px;
+  max-width:100%;
+  width: 900px; 
+  margin:30px auto 80px auto;
+  border:2px solid white;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #333;
+  color:white;
+}
+
+hr{
+	border-color: black;
+	border-width: 1px;
+}
+
+h2{
+	margin-top: 30px;
+
+}
+
+td{
+  border:1px solid white;
+  border-collapse: collapse;
+  padding:5px;
+}
+table{
+	margin:20px auto;
+}
+
+.co-ordinates-block {
+  padding:30px;
+}
+
+.user-input{
+	border:2px solid white;
+	padding: 10px;
+}
+
+input{
+	max-width: 250px;
+	margin-left: 20px;
+  color:black;
+}
+
+.modes{
+  margin-top: 50px;
+}
+.modes-list{
+  border:transparent;
+}
+.postcode-list{
+  margin-left: 40px;
+}
+
+.data-block{
+  border:2px solid black;
+}
+.search{
+  margin-top: 10px;
+  margin-left: 40px;
+  background-color: floralwhite;
+  color: black;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 7px
+}
+ul{
+  margin-left: 30px;
+}
+  
+ul li:nth-child(1) {
+  position: relative;
+  top: 20px;
+}
+.rail{
+  margin-top: -4px;
+}
+.success-alert{
+  font-size: 25px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.msg{
+  padding: 20px;
+}
+
+thead td,
+tbody td{
+  text-align: center;
+}
+
+tbody td {
+ padding: 20px;
+}
+.chart{
+  margin-left: -60px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.chart table{
+  margin:0;
+}

@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  	<h2 class="text-center">Google Maps for Geolocation</h2>
+    <div id="map"></div>
+    <hr />
+    <h2 class="text-center">Timetable of London Buses</h2>
+    <form>
+  		<div class="co-ordinates-block text-center">
+  			<div class="row">
+        	<div class="col-xs-12 col-sm-4 user-input">
+          	<label for="latitude">LATITUDE:</label>
+          	<input name="latitude" id="latitude" type="text" placeholder="51.6060985"/>
+   		    </div>
+     		  <div class="col-xs-12 col-sm-4 user-input">
+          	<label for="longitude">LONGITUDE:</label>
+          	<input name="longitude" id="longitude" type="text" placeholder="-0.0904692" /> 
+  		    </div>
+  		    <div class="col-xs-12 col-sm-4 user-input">
+          	<label for="postcode">POSTCODE:</label>
+          	<input name="postcode" id="postcode" type="text" placeholder="n225qw" /> 
+  		    </div>
+  			</div>
+  		</div>
+      <div class="container">
+        <div class="row chart">
+          <table>
+            <thead>
+              <tr>
+                <td>Latitude</td>
+                <td>Longitude</td>
+                <td>Postcode</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>51.5970483</td>
+                <td>-0.1111422</td>
+                <td>se171jl</td>
+              </tr>
+              <tr>
+                <td>51.5386915</td>
+                <td>-0.1910752</td>
+                <td>w127gf</td>
+              </tr>
+              <tr>
+                <td>51.6165119</td>
+                <td>-0.1597954 </td>
+                <td>n102ds</td>
+              </tr>
+              <tr>
+                <td>51.4800483</td>
+                <td>-0.2691437</td>
+                <td>w42qn</td>
+              </tr>
+              <tr>
+                <td>51.5390531</td>
+                <td>-0.1930121</td>
+                <td>n103hu</td>
+              </tr>
+              <tr>
+                <td>51.5368879</td>
+                <td>-0.2913728</td>
+                <td>sw109nh</td>
+              </tr>
+              <tr>
+                <td>51.5467236</td>
+                <td>-0.2871149</td>
+                <td>n113pw</td>
+              </tr>
+              <tr>
+                <td>51.5308831</td>
+                <td>-0.1923074</td>
+                <td>se120tx</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  	  </div>
+      
+     <h4 class="text-left postcode-list"><a href="http://www.londontown.com/LondonPC/Postcodes/ZipCodes/Information/N22/?s=80&search=" target="_blank">You can check for the postcodes on this link</a></h4>
+    <button class="search left-block" id="search">Search for the route</button>
+    <p class="success-alert"></p>
+	</form>
+	
+
+	<div class="modes text-center">
+    <ul class="nav nav-tabs modes-list">
+      <li>Select the type of mode :-</li>
+      <li><a  class="walking" data-toggle="tab" href="#walking"><img src="https://png.icons8.com/walking/color/24" title="Walking" width="44" height="44"></a></li>
+  		<li><a  class="bus" data-toggle="tab" href="#bus"><img src="https://png.icons8.com/bus/dusk/64" title="Bus" width="44" height="44"></a></li>
+  		<li><a class="rail" data-toggle="tab" href="#rail"><img src="https://png.icons8.com/train/nolan/64" title="Train" width="54" height="54"></a></li>
+  		<li><a  class="tube" data-toggle="tab" href="#tube"><img src="https://png.icons8.com/train/dusk/64" title="Train" width="44" height="44"></a></li>
+    </ul>
+	</div>
+    <div class="tab-content">
+      <div id="walking" class="tab-pane fade in">
+        <h3 class="text-center">By walking</h3>
+        <table class="times_records_walk" class="text-center">
+          <thead>
+            <tr>
+              <td><b><h3>Sr No.</h3></b></td>
+              <td><b><h3>Source</h3></b></td>
+              <td><b><h3>Departure Time</h3></b></td>
+              <td><b><h3>Departure Date</h3></b></td>
+              <td><b><h3>Destination</h3></b></td>
+              <td><b><h3>Arrival Lat</h3></b></td>
+              <td><b><h3>Arrival Lon</h3></b></td>
+              <td><b><h3>Arrival Time</h3></b></td>
+              <td><b><h3>Arrival Date</h3></b></td>
+              <td><b><h3>Distance</h3></b></td>
+              <td><b><h3>Duration</h3></b></td>
+            </tr>
+          </thead>
+          <tbody id="tbody_walk">
+          </tbody>
+        </table>
+      </div>
+      <div id="bus" class="tab-pane fade">
+         <h3 class="text-center">By Bus</h3>
+          <table class="times_records_bus" class="text-center">
+            <thead>
+              <tr>
+                <td><b><h3>Sr No.</h3></b></td>
+                <td><b><h3>Source</h3></b></td>
+                <td><b><h3>Departure Time</h3></b></td>
+                <td><b><h3>Departure Date</h3></b></td>
+                <td><b><h3>Destination</h3></b></td>
+                <td><b><h3>Arrival Lat</h3></b></td>
+                <td><b><h3>Arrival Lon</h3></b></td>
+                <td><b><h3>Arrival Time</h3></b></td>
+                <td><b><h3>Arrival Date</h3></b></td>
+                <td><b><h3>Duration</h3></b></td>
+              </tr>
+            </thead>
+            <tbody id="tbody_bus">
+            </tbody>
+          </table>
+      </div>
+      <div id="tube" class="tab-pane fade">
+        <h3 class="text-center">By Tube</h3>
+        <table class="times_records_tube" class="text-center">
+          <thead>
+            <tr>
+              <td><b><h3>Sr No.</h3></b></td>
+              <td><b><h3>Source</h3></b></td>
+              <td><b><h3>Departure Time</h3></b></td>
+              <td><b><h3>Departure Date</h3></b></td>
+              <td><b><h3>Destination</h3></b></td>
+              <td><b><h3>Arrival Lat</h3></b></td>
+              <td><b><h3>Arrival Lon</h3></b></td>
+              <td><b><h3>Arrival Time</h3></b></td>
+              <td><b><h3>Arrival Date</h3></b></td>
+              <td><b><h3>Duration</h3></b></td>
+            </tr>
+          </thead>
+          <tbody id="tbody_tube">
+          </tbody>
+        </table>
+      </div>
+      <div id="rail" class="tab-pane fade">
+        <h3 class="text-center">By Rail</h3>
+        <table class="times_records_rail" class="text-center">
+          <thead>
+            <tr>
+              <td><b><h3>Sr No.</h3></b></td>
+              <td><b><h3>Source</h3></b></td>
+              <td><b><h3>Departure Time</h3></b></td>
+              <td><b><h3>Departure Date</h3></b></td>
+              <td><b><h3>Destination</h3></b></td>
+              <td><b><h3>Arrival Lat</h3></b></td>
+              <td><b><h3>Arrival Lon</h3></b></td>
+              <td><b><h3>Arrival Time</h3></b></td>
+              <td><b><h3>Arrival Date</h3></b></td>
+              <td><b><h3>Duration</h3></b></td>
+            </tr>
+          </thead>
+          <tbody id="tbody_rail">
+          </tbody>
+        </table>
+   
+      </div>
+    </div>
+    <h2 class="msg text-center"></h2>
+ 
+  <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src ="js/custom.js"></script>
+  <script src="js/map.js"></script>
+	<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRs5UPyHGI84OBSYX3AAS7rzT0eXJFCfc&callback=initMap">
+  </script>
+	
+</body>
+</html>
