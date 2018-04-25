@@ -10123,6 +10123,22 @@ p {
   background-attachment: fixed !important;
   background-size: cover !important;
 }
+.experience .row{
+  margin:0 auto;
+  width: 90%;
+margin-top: 130px;
+}
+.company-info{
+padding:20px;
+border:1px solid red;
+}
+
+.company-info p{
+  font-size: 1em;
+  color:inherit;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
 
 .portfolio {
   padding-bottom: 80px;
@@ -10623,18 +10639,38 @@ header {
 .about-thumb .image-container {
   position: relative;
 }
+.experience{
+  min-height: 600px;
+  background-color: #D3D3D3;
+  margin-top: -20px;
+}
 
 .portfolio {
   background: #80cbc4;
 }
-.portfolio h2 {
+.portfolio h2{
   color: #333 !important;
   font-size: 30px;
   left: 120px !important;
   position: relative !important;
   top: -15px !important;
 }
+.experience h2{
+  color: #333 !important;
+  font-size: 30px;
+ margin-left: 120px !important;
+  position: relative !important;
+  top:100px;
+}
+.left-float{
+float:left;
+clear: both;
+}
 
+.right-float{
+float: right;
+clear:both;
+}
 .project-title {
   color: #000;
   font-size: 22px;
@@ -11320,5 +11356,6 @@ footer p {
     transform: rotate(-360deg);
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
