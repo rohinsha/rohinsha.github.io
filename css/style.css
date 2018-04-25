@@ -10129,8 +10129,8 @@ p {
 margin-top: 130px;
 }
 .company-info{
-padding:20px;
-border:1px solid red;
+padding:20px 0;
+
 }
 
 .company-info p{
@@ -10639,10 +10639,18 @@ header {
 .about-thumb .image-container {
   position: relative;
 }
+.company-info p{
+  text-align: justify;
+}
 .experience{
   min-height: 600px;
   background-color: #D3D3D3;
   margin-top: -20px;
+  padding-bottom: 20px;
+  
+}
+.company-info ul{
+  text-align: justify;
 }
 
 .portfolio {
@@ -10658,9 +10666,9 @@ header {
 .experience h2{
   color: #333 !important;
   font-size: 30px;
- margin-left: 120px !important;
+ margin-left: 90px !important;
   position: relative !important;
-  top:100px;
+  top:130px;
 }
 .left-float{
 float:left;
