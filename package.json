@@ -16,9 +16,9 @@
     "url": "https://github.com/rohinsha/rohinshag.github.io/issues"
   },
   "homepage": "https://github.com/rohinsha/rohinshag.github.io#readme",
-  "description": "",
   "devDependencies": {
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
-  }
+  },
+  "description": ""
 }
